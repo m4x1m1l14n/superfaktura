@@ -1,0 +1,24 @@
+{
+  "name": "superfaktura",
+  "version": "1.0.0",
+  "description": "NodeJS API connector for superfaktura",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m4x1m1l14n/superfaktura.git"
+  },
+  "keywords": [
+    "api",
+    "connector",
+    "superfaktura"
+  ],
+  "author": "m4x1m1l14n",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m4x1m1l14n/superfaktura/issues"
+  },
+  "homepage": "https://github.com/m4x1m1l14n/superfaktura#readme"
+}
