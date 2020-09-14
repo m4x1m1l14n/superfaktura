@@ -1,3 +1,3 @@
-# NodeJS API connector for superfaktura
+# Superfaktura NodeJS API client
 
 Massive WiP
