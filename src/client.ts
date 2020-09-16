@@ -52,7 +52,7 @@ export class Client
 			{
 				hostname: url.hostname,
 				path: url.pathname,
-				port: url.port || this.resolvePort( url.protocol ),
+				port: url.port ?? this.resolvePort( url.protocol ),
 				headers: this.additionalHeaders
 			};
 
@@ -99,6 +99,11 @@ export class Client
 		} );
 	}
 
+	/**
+	 * Gets detail of invoice by its ID
+	 * 
+	 * @param invoiceId ID of invoice
+	 */
 	public async getInvoice( invoiceId : number ) : Promise<any>
 	{
 		const url = new URL( `/invoices/view/${invoiceId}.json`, this.config.apiUri );
