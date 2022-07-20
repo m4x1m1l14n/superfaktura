@@ -1,0 +1,36 @@
+name: ci
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      matrix:
+        node-version: [16]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Using Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install
+      run: npm install
+
+    - name: Lint
+      run: npm run lint
+
+    - name: Build
+      run: npm run build
+
+    - name: Tests
+      run: npm test
+      env:
+        SF_EMAIL: ${{ secrets.SF_EMAIL }}
+        SF_API_URI: ${{ secrets.SF_API_URI }}
+        SF_API_KEY: ${{ secrets.SF_API_KEY }}
+        SF_COMPANY_ID: ${{ secrets.SF_COMPANY_ID }}
+
+    # - name: Coverage
+    #   run: npx codecov --token="${{ secrets.CODECOV_TOKEN }}"
