@@ -21,5 +21,5 @@ module.exports =
 	setupFiles: [
 		'./test/setup.ts'
 	],
-	//collectCoverage: true
+	collectCoverage: true
 };

@@ -32,5 +32,5 @@ jobs:
         SF_API_KEY: ${{ secrets.SF_API_KEY }}
         SF_COMPANY_ID: ${{ secrets.SF_COMPANY_ID }}
 
-    # - name: Coverage
-    #   run: npx codecov --token="${{ secrets.CODECOV_TOKEN }}"
+    - name: Coverage
+      run: npx codecov --token="${{ secrets.CODECOV_TOKEN }}"
