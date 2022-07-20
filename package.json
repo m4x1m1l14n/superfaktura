@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"description": "NodeJS API connector for superfaktura",
 	"main": "dist/index.js",
+	"files": [
+		"dist/"
+	],
 	"scripts": {
 		"test": "jest --verbose",
 		"lint": "eslint . --ext .ts",
