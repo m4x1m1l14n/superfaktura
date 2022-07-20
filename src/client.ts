@@ -67,6 +67,12 @@ export class Client
 		}
 	}
 
+	/**
+	 * Add new bank account
+	 * 
+	 * @param bankAccount Bank account data to be added
+	 * @returns Created bank account object
+	 */
 	public async addBankAccount( bankAccount: AddBankAccountRequestDto ): Promise<BankAccount>
 	{
 		if (

@@ -5,7 +5,11 @@
 [![codecov](https://codecov.io/gh/m4x1m1l14n/superfaktura/branch/devel/graph/badge.svg?token=S8YX8SOKK1)](https://codecov.io/gh/m4x1m1l14n/superfaktura)
 ![GitHub issues](https://img.shields.io/github/issues/m4x1m1l14n/superfaktura)
 
-Massive WiP
+NodeJS API connector for superfaktura
+
+## Documentation
+
+Automatically generated documentation can be found at [here](docs/docs.md)
 
 ## Testing
 
